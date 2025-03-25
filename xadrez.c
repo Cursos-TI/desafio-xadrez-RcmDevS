@@ -28,16 +28,32 @@ void moverRainha(int casas) {
     } while (i < casas);
 }
 
+// Função para simular o movimento do Cavalo
+void moverCavalo() {
+    printf("\nMovimento do Cavalo:\n");
+    // O cavalo se move duas casas para baixo
+    for (int i = 0; i < 2; i++) {
+        printf("Baixo\n");
+    }
+    // E então uma casa para a esquerda
+    int j = 0;
+    while (j < 1) {
+        printf("Esquerda\n");
+        j++;
+    }
+}
+
 int main() {
     // Número de casas a serem movidas para cada peça
-    const int casasTorre = 5;
-    const int casasBispo = 5;
-    const int casasRainha = 8;
+    int casasTorre = 5;
+    int casasBispo = 5;
+    int casasRainha = 8;
 
     // Simulando os movimentos
     moverTorre(casasTorre);
     moverBispo(casasBispo);
     moverRainha(casasRainha);
+    moverCavalo();
 
     return 0;
 }
